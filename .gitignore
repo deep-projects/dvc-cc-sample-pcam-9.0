@@ -138,3 +138,5 @@ tf_model.h5
 # other
 *.idea
 *.ipynb_checkpoints
+/tensorboard
+/tf_model.h5
