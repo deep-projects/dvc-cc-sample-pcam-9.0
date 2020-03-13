@@ -1,4 +1,4 @@
-md5: 4c3fac7971c99af2974568e4b8bb1cc1
+md5: 927c43824870bb434ed6d9577cb780d1
 cmd: sh source/download_pcam.sh
 wdir: ..
 deps:
@@ -25,7 +25,7 @@ outs:
   cache: false
   metric: false
   persist: false
-- md5: ddf08fb24d1353e561f06c5d11b7d1c2
+- md5: 01844da899645b4d6f84946d417ba453
   path: data/camelyonpatch_level_2_split_train_x.h5
   cache: false
   metric: false
