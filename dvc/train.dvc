@@ -1,26 +1,29 @@
-cmd: python source/train.py --learning-rate 0.2 --batch-size 128 --num-of-epochs
-  10 --activation-function relu --kernel-width
-  3 --average-kernels 64 --num-of-conv-layers
-  4 --kernel-increasing-factor 1.1
-  --maxpool-after-n-layer 2 --dropout-factor-after-conv
+cmd: python source/train.py --learning-rate 0.2 --batch-size 128 --num-of-epochs 10
+  --activation-function relu --kernel-width 3 --average-kernels 64 --num-of-conv-layers
+  4 --kernel-increasing-factor 1.1 --maxpool-after-n-layer 2 --dropout-factor-after-conv
   0 --dropout-factor-after-maxp 0.1
 wdir: ..
 deps:
 - path: source/train.py
+  md5: 33ea27562f4daed2dbc51f366a0ab453
 - path: data
+  md5: 0f9d0cdb73a61c92de68116af11e49c9.dir
 outs:
 - path: tensorboard
   cache: true
   metric: false
   persist: false
+  md5: 5b3d0337829c86880a3a2141555611ac.dir
 - path: tf_model.h5
   cache: true
   metric: false
   persist: false
+  md5: 8ad8a475fd80022cc692a7544d7167a9
 - path: outputs/all-history.json
   cache: true
   metric: true
   persist: false
+  md5: 04d6a101f5abbe428b882d258ce8d4ef
 - path: outputs/history-summary.json
   cache: true
   metric: true
@@ -28,3 +31,5 @@ outs:
 
 
 
+  md5: 7e2e486c214c5adb50944396b14c2c2a
+md5: a5e4f4cbb567cd5ad7b8717e318689fc
